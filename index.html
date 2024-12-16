@@ -32,7 +32,7 @@
 
 <div class="h1-bgimg">
 	<div>
-		<h1>計算過程が見える電卓アプリ紹介</h1>
+		<h1>計算過程が見える電卓アプリ</h1>
 		<p class="author">梶岡 響</p>
 	</div>
 </div>
@@ -117,13 +117,13 @@
 	また、こだわりポイントとして、計算処理が進行中でも「Calcurate」ボタン横のスライダーから表示の更新ペースを毎秒1～22フレームまでの間で調節することができます。
 </p>
 <figure style="height:45vh;">
-	<img src="https://floor02.sakura.ne.jp/_imgshared/P-running.png" alt="PROCESSモード" style="height:100%;">
+	<img src="./kajioka/P-running.png" alt="PROCESSモード" style="height:100%;">
 	<!-- <figcaption>PROCESSモードで計算中の様子</figcaption> -->
 </figure>
 <br>
 <p>さらに、このモードでは画面下のlogの領域をクリックすることで処理のログを表示できます。</p>
 <figure>
-	<img src="https://floor02.sakura.ne.jp/_imgshared/P-log.png" alt="PROCESSモードログ表示" style="height:100%;">
+	<img src="./kajioka/P-log.png" alt="PROCESSモードログ表示" style="height:100%;">
 	<!-- <figcaption>処理のログ表示</figcaption> -->
 </figure>
 
@@ -135,7 +135,7 @@
 	もう一つのこだわりポイントとして、モード切替のUIがあります。この電卓は機能としてはシンプルなので、直接モードを切り替えるボタンを配置しました。モードに対応した色で視覚的にわかりやすくなっています。また、INSTANTモードではスライダーと「Calcurate」ボタンは無効化されています。
 </p>
 <figure style="height:10vh;">
-	<img src="https://floor02.sakura.ne.jp/_imgshared/modeswitch.png" alt="モードの比較" style="height:100%;">
+	<img src="./kajioka/modeswitch.png" alt="モードの比較" style="height:100%;">
 	<!-- <figcaption>モード切替比較</figcaption> -->
 </figure>
 
@@ -153,7 +153,7 @@
 	この電卓では、4段階の変換・演算を経て解が求まります。
 </p>
 <figure style="height:35vh;">
-	<img src="https://floor02.sakura.ne.jp/_imgshared/convertFlow_400.png" alt="全体処理の流れの図" style="height:100%;">
+	<img src="./kajioka/convertFlow.png" alt="全体処理の流れの図" style="height:100%;">
 	<!-- <figcaption>図1</figcaption> -->
 </figure>
 <p>以下、処理の実行される順番で紹介します。</p>
@@ -172,10 +172,6 @@
 // 	の入力を待機中
 </code></pre>
 </div>
-<!-- <figure style="height:35vh;"> -->
-	<!-- <img src="https://floor02.sakura.ne.jp/_imgshared/inputSeiri.png" alt="全体処理の流れの図" style="height:100%;"> -->
-	<!-- <figcaption>図1</figcaption> -->
-<!-- </figure> -->
 
 <h3>2. 入力数式の変換（結合）</h3>
 <p>
@@ -189,12 +185,12 @@
 <h3>3. 後置記法への変換</h3>
 <p>2. までの行程で中置記法の配列が用意できたので、次のアルゴリズムで後置記法へ変換します。</p>
 <figure style="height:30vh;">
-	<img src="https://floor02.sakura.ne.jp/_imgshared/conversion.png" style="height:100%;">
+	<img src="./kajioka/conversion.png" style="height:100%;">
 	<!-- <figcaption>図1</figcaption> -->
 </figure>
 <p>また、重要な記号の優先順位は次のようになります。（大きいほど優先順位高）括弧開きが 0 になるのですが、これは後置記法の変換方法で調べてもなかなか解説されているものが無く、0だと気づくまで時間がかかりました。</p>
 <figure style="height:8vh;">
-	<img src="https://floor02.sakura.ne.jp/_imgshared/priority.png" alt="記号優先順位" style="height:100%;">
+	<img src="./kajioka/priority.png" alt="記号優先順位" style="height:100%;">
 	<!-- <figcaption>図1</figcaption> -->
 </figure>
 
@@ -203,7 +199,7 @@
 <h3>4. 後置記法→解への演算</h3>
 <p>後置記法から解を求める際には次のアルゴリズムを使います。</p>
 <figure style="height:18vh;">
-	<img src="https://floor02.sakura.ne.jp/_imgshared/solve.png" alt="解を求めるアルゴリズムの説明" style="height:100%;">
+	<img src="./kajioka/solve.png" alt="解を求めるアルゴリズムの説明" style="height:100%;">
 	<!-- <figcaption>図1</figcaption> -->
 </figure>
 <p>
